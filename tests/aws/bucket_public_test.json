@@ -1,0 +1,4 @@
+{
+  "eventName": "PutBucketAcl",
+  "bucketAcl": "public-read"
+}
