@@ -1,0 +1,5 @@
+{
+  "eventName": "ConsoleLogin",
+  "sourceIPAddress": "99.88.77.66",
+  "geoip": { "country": "France" }
+}
