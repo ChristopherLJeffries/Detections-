@@ -1,0 +1,19 @@
+title: AWS Root Login Without MFA
+id: aws-root-login-no-mfa-demo
+status: test
+description: Detects AWS root account login events where MFA was not used.
+tags:
+  - attack.impact
+  - aws
+logsource:
+  product: aws
+  service: cloudtrail
+detection:
+  selection:
+    eventName: ConsoleLogin
+    userIdentity.type: Root
+    additionalEventData.MFAUsed: "No"
+  condition: selection
+falsepositives:
+  - Rare legitimate root logins without MFA
+level: high
