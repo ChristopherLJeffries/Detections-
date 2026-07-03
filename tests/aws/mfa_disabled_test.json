@@ -1,0 +1,4 @@
+{
+  "eventName": "DeactivateMFADevice",
+  "userIdentity": { "type": "IAMUser" }
+}
