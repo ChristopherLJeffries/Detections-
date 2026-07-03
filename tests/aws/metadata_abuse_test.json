@@ -1,0 +1,4 @@
+{
+  "eventName": "GetMetadata",
+  "path": "/latest/meta-data/iam/security-credentials/"
+}
