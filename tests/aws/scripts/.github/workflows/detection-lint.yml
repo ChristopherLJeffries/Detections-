@@ -1,0 +1,17 @@
+name: Validate Detections
+
+on:
+  pull_request:
+    paths:
+      - 'detections/**/*.yaml'
+      - 'tests/**/*.json'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Run detection validator
+        run: |
+          python scripts/validate.py
